@@ -5,7 +5,7 @@
 #include <fstream>
 #include <algorithm>
 
-void saveTasksToFile(const std::vector<Task>& tasks, const std::string& fileName)
+void SaveTasksToFile(const std::vector<Task>& tasks, const std::string& fileName)
 {
 	std::ofstream ostream(fileName);
 	ostream << tasks.size();
@@ -20,7 +20,7 @@ void saveTasksToFile(const std::vector<Task>& tasks, const std::string& fileName
 	}
 }
 
-std::vector<Task> loadTasksFromFile(const std::string& fileName)
+std::vector<Task> LoadTasksFromFile(const std::string& fileName)
 {
 	if (!std::filesystem::exists(fileName))
 	{
