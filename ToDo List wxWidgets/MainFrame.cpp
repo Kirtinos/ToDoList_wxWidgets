@@ -50,7 +50,7 @@ void MainFrame::OnAddButtonClicked(wxCommandEvent& evt)
 {
 	AddTaskFromInput();
 }
-
+//taking inputs with "ENTER"
 void MainFrame::OnInputEnter(wxCommandEvent& evt)
 {
 	AddTaskFromInput();
