@@ -5,7 +5,8 @@
 #include "Task.h"
 
 //main
-MainFrame::MainFrame(const wxString& title) : wxFrame(nullptr, wxID_ANY, title)
+MainFrame::MainFrame(const wxString& title) : wxFrame(nullptr, wxID_ANY, title, 
+	wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE & ~(wxRESIZE_BORDER | wxMAXIMIZE_BOX))
 {
 	CreateControls();
 	bindEventHandlers();
